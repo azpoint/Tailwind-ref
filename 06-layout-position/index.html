@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Positioning -->
+    <div class="relative h-12 bg-red-200 w-1/2">
+      <p>Parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">Absolute Child</div>
+    </div>
+
+    <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Span left edge -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute inset-y-0 top-0 w-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute inset-y-0 right-0 w-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-200">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-400"></div>
+    </div>
+
+    <!-- Display Classes -->
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum tempore explicabo libero, velit laboriosam, quas ex molestiae quidem dicta perferendis natus illum consequuntur ab nisi accusamus, <span class="inline font-bold">THIS IS INLINE</span> tenetur mollitia ullam.
+    Adipisci voluptatibus nihil, ipsa fugiat similique nisi temporibus dignissimos recusandae! Eligendi sunt maxime quos vitae incidunt facilis quaerat veniam impedit labore esse laudantium porro provident nemo aliquam, <span class="inline-block font-bold">THIS IS INLINE-BLOCK</span> quis qui? Deserunt.
+    Animi minus rerum modi. Veniam provident recusandae laudantium incidunt quos sapiente facere distinctio ex? <span class="block font-bold">THIS IS BLOCK</span> Praesentium cupiditate quia consequatur laudantium quo odit quaerat harum, facilis quisquam fugit aliquid fuga architecto sed? Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span class="hidden font-bold">THIS IS HIDDEN</span> Ea ratione velit cumque similique tempore exercitationem modi voluptas corrupti odio nisi ipsa provident esse sunt delectus omnis, nobis quae aliquid veniam!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis praesentium illum reprehenderit, modi fugiat tenetur facilis distinctio, commodi dolores sapiente sunt voluptas enim recusandae necessitatibus dignissimos aut aperiam placeat!</div>
+
+    <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute w-24 h-24 bg-blue-300 left-10 z-40">1</div>
+      <div class="absolute w-24 h-24 bg-blue-400 left-20">2</div>
+      <div class="absolute w-24 h-24 bg-blue-500 left-40 z-10">3</div>
+      <div class="absolute w-24 h-24 bg-blue-600 left-60 z-20">4</div>
+      <div class="absolute w-24 h-24 bg-blue-700 left-80 z-30">5</div>
+    </div>
+
+    <!-- Floats -->
+    <div class="w-1/2">
+      <img src="../assets/img/img1.jpg" class="h-48 w-48 float-left m-4"/>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque nemo modi voluptatum dolore ex recusandae hic, aspernatur nisi odit eaque magnam, maxime libero consectetur fugit. Dolorem quasi veritatis libero temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eius! Ipsum voluptatum quam qui quisquam similique! Ut tenetur repudiandae molestiae numquam. Porro libero neque rem similique voluptates, eligendi laborum iste?</p>
+    </div>
+
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
